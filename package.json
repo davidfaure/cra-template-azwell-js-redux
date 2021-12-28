@@ -1,7 +1,38 @@
 {
-  "name": "azwell-template",
+  "name": "cra-template-azwell-js-redux",
+  "license": "MIT",
+  "author": "David Faure <aswelldavid@gmail.com",
+  "engines": {
+    "node": ">=15"
+  },
+  "main": "template.json",
+  "description": "A quick start Create React App template with React Router, Redux, and custom ESlint configurations with Husky pre-commit",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "husky",
+    "eslint",
+    "redux",
+    "react-redux",
+    "react-router",
+    "react-router-dom",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidfaure/azwell-cra-template-js-redux",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/davidfaure/azwell-cra-template-js-redux/issues"
+  },
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -24,6 +55,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc.json && rm -f ./template/.prettierrc",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc.json template/ && cp .prettierrc template/",
+    "prepublishOnly": "yarn clean-files && yarn copy-files",
     "_lint": "eslint --config ./.eslintrc.json --ext js --ext jsx --ext tsx --ext ts",
     "lint": "npm run _lint -- ./src/",
     "lint:fix": "npm run _lint -- --fix ./src/",
