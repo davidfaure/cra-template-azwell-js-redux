@@ -6,6 +6,10 @@ An opinionated quick start [Create React App](https://github.com/facebook/create
 
 Original Create React App README available [here](./README_CRA.md)
 
+# Warning
+
+Please note that this template use the last lts version of node.js currently 16.13.1, I cannot guarantee that it will work on previous version.
+
 ## Usage
 
 ```bash
@@ -44,6 +48,10 @@ Due to CRA template limitations (we can change only `scripts` and `dependencies`
 ## [Prettier](https://prettier.io/)
 
 I added `prettier` to force consistent formatting. Don't like trailing semicolons? Feel free to [tweak prettier rules](https://prettier.io/docs/en/configuration.html) inside `.prettierrc` file to match your code style.
+
+## Styles/CSS/Styling
+
+You will find in the [index.scss](.src/index.scss) file my personal CSS reset, feel free to change it to use your own.
 
 ## Eslint configurations
 
