@@ -51,7 +51,7 @@ I added `prettier` to force consistent formatting. Don't like trailing semicolon
 
 ## Styles/CSS/Styling
 
-You will find in the [index.scss](.src/index.scss) file my personal CSS reset, feel free to change it to use your own.
+You will find in the [index.scss](src/index.scss) file my personal CSS reset, feel free to change it to use your own.
 
 ## Eslint configurations
 
