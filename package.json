@@ -26,13 +26,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidfaure/azwell-cra-template-js-redux",
+    "url": "https://github.com/davidfaure/cra-template-azwell-js-redux",
     "directory": "/"
   },
   "bugs": {
-    "url": "https://github.com/davidfaure/azwell-cra-template-js-redux/issues"
+    "url": "https://github.com/davidfaure/cra-template-azwell-js-reduxissues"
   },
-  "version": "0.7.0",
+  "version": "0.8.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
